@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.krissirin.RegistrationPracticeForm" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-15T19:35:57" hostname="192.168.1.5" time="7.79">
+<testsuite name="com.krissirin.RegistrationPracticeForm" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-15T20:11:12" hostname="192.168.1.5" time="8.072">
   <properties/>
-  <testcase name="PositivePass()" classname="com.krissirin.RegistrationPracticeForm" time="7.79"/>
+  <testcase name="PositivePass()" classname="com.krissirin.RegistrationPracticeForm" time="8.072"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 14 - let's create a new webdriver
-[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /Users/user/IdeaProjects/Unit10/build/downloads/1634326558033_37499_14
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /Users/user/IdeaProjects/Unit10/build/downloads/1634328672077_37814_14
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 94.0.4606.61 (resolved driver for Chrome 94)
 [Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/user/.cache/selenium/chromedriver/mac64/94.0.4606.61/chromedriver
-Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 42656
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 34291
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-окт. 15, 2021 10:36:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+окт. 15, 2021 11:11:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO com.codeborne.selenide.webdriver.HttpClientTimeouts - Changed connectTimeout from 120000 to 60000
 [Test worker] INFO com.codeborne.selenide.webdriver.HttpClientTimeouts - Changed readTimeout from 10800000 to 120000
 [Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=94.0.4606.81 Platform=MAC
-[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.24.2
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.24.0
 [Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
-[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on MAC (91a4c929f0fd19d5b7d870d9a08f76df)
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on MAC (1ef03a204c901b40f6d124cbdf115b0a)
 ]]></system-err>
 </testsuite>
