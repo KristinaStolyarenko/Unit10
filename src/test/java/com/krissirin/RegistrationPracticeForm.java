@@ -13,7 +13,6 @@ public class RegistrationPracticeForm extends TestData {
 
     @Test
     void PositivePass() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Открываем главную страницу", () -> {
             registrationPage.openPage();
