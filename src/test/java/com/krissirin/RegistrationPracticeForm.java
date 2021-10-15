@@ -1,7 +1,11 @@
 package com.krissirin;
 
+import com.codeborne.selenide.logevents.SelenideLogger;
 import com.krissirin.pages.RegistrationPage;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
+
+import static io.qameta.allure.Allure.step;
 
 public class RegistrationPracticeForm extends TestData {
 
@@ -9,30 +13,45 @@ public class RegistrationPracticeForm extends TestData {
 
     @Test
     void PositivePass() {
-        registrationPage.openPage();
-        registrationPage.typeFirstName(firstName);
-        registrationPage.typeLastName(lastName);
-        registrationPage.typeEmail(email);
-        registrationPage.chooseGender(sex);
-        registrationPage.setNumber(number);
-        registrationPage.calendar.setDate("3","July","1993");
-        registrationPage.setSubjects("Biology");
-        registrationPage.chooseHobbies(hobbie);
-        registrationPage.uploadPicture("001.jpeg");
-        registrationPage.setAddress(address);
-        registrationPage.stateCity.scrollIntoView(true);
-        registrationPage.chooseStateCity(states.get(0));
-        registrationPage.chooseCity(cities.get(0));
-        registrationPage.submitForm();
-        registrationPage.checkSubmittedForm("Student Name", firstName + " " + lastName);
-        registrationPage.checkSubmittedForm("Student Email", email);
-        registrationPage.checkSubmittedForm("Gender", sex);
-        registrationPage.checkSubmittedForm("Mobile", number);
-        registrationPage.checkSubmittedForm("Date of Birth", "03 July,1993");
-        registrationPage.checkSubmittedForm("Subjects", "Biology");
-        registrationPage.checkSubmittedForm("Hobbies", hobbie);
-        registrationPage.checkSubmittedForm("Picture", "001.jpeg");
-        registrationPage.checkSubmittedForm("Address", address);
-        registrationPage.checkSubmittedForm("State and City", states.get(0) + " " + cities.get(0));
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
+        step("Открываем главную страницу", () -> {
+            registrationPage.openPage();
+        });
+        step("Заполняем данные пользователя", () -> {
+            registrationPage.typeFirstName(firstName);
+            registrationPage.typeLastName(lastName);
+            registrationPage.typeEmail(email);
+            registrationPage.chooseGender(sex);
+            registrationPage.setNumber(number);
+        });
+        step("Выбираем дату в календаре", () -> {
+            registrationPage.calendar.setDate("3","July","1993");
+        });
+        step("Заполняем профиль и территориальные данные", () -> {
+            registrationPage.setSubjects("Biology");
+            registrationPage.chooseHobbies(hobbie);
+            registrationPage.uploadPicture("001.jpeg");
+            registrationPage.setAddress(address);
+            registrationPage.stateCity.scrollIntoView(true);
+            registrationPage.chooseStateCity(states.get(0));
+            registrationPage.chooseCity(cities.get(0));
+        });
+        step("Отправляем форму", () -> {
+            registrationPage.submitForm();
+        });
+        step("Проверяем заполненные данные", () -> {
+            registrationPage.checkSubmittedForm("Student Name", firstName + " " + lastName);
+            registrationPage.checkSubmittedForm("Student Email", email);
+            registrationPage.checkSubmittedForm("Gender", sex);
+            registrationPage.checkSubmittedForm("Mobile", number);
+            registrationPage.checkSubmittedForm("Date of Birth", "03 July,1993");
+            registrationPage.checkSubmittedForm("Subjects", "Biology");
+            registrationPage.checkSubmittedForm("Hobbies", hobbie);
+            registrationPage.checkSubmittedForm("Picture", "001.jpeg");
+            registrationPage.checkSubmittedForm("Address", address);
+            registrationPage.checkSubmittedForm("State and City", states.get(0) + " " + cities.get(0));
+        });
+
     }
 }
