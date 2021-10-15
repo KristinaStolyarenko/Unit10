@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.krissirin.RegistrationPracticeForm" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-15T18:54:59" hostname="192.168.1.5" time="8.598">
+  <properties/>
+  <testcase name="PositivePass()" classname="com.krissirin.RegistrationPracticeForm" time="8.598"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 14 - let's create a new webdriver
+[Test worker] INFO com.codeborne.selenide.impl.FileHelper - Creating folder: /Users/user/IdeaProjects/Unit10/build/downloads/1634324099051_36794_14
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 94.0.4606.61 (resolved driver for Chrome 94)
+[Test worker] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as /Users/user/.cache/selenium/chromedriver/mac64/94.0.4606.61/chromedriver
+Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 46225
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+окт. 15, 2021 9:55:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] INFO com.codeborne.selenide.webdriver.HttpClientTimeouts - Changed connectTimeout from 120000 to 60000
+[Test worker] INFO com.codeborne.selenide.webdriver.HttpClientTimeouts - Changed readTimeout from 10800000 to 120000
+[Test worker] INFO com.codeborne.selenide.webdriver.BrowserResizer - Set browser size to 1366x768
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=94.0.4606.81 Platform=MAC
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 5.24.0
+[Test worker] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 3.141.59 build time: 2018-11-14T08:17:03
+[Test worker] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Create webdriver in current thread 14: ChromeDriver -> ChromeDriver: chrome on MAC (01dc0e9225d91e6c3ec8b889c4de5816)
+]]></system-err>
+</testsuite>
