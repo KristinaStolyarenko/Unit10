@@ -9,7 +9,7 @@ import java.util.Locale;
 import static com.krissirin.utils.RandomUtils.getRandomHobbies;
 import static com.krissirin.utils.RandomUtils.getRandomPhone;
 
-public class TestData {
+public class TestData extends TestBase {
 
    static Faker faker = new Faker();
 
