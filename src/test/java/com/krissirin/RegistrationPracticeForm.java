@@ -1,5 +1,6 @@
 package com.krissirin;
 
+import com.codeborne.selenide.Configuration;
 import com.krissirin.pages.RegistrationPage;
 import org.junit.jupiter.api.Test;
 
@@ -11,6 +12,7 @@ public class RegistrationPracticeForm extends TestData {
 
     @Test
     void PositivePass() {
+        System.out.println(Configuration.remote);
 
         step("Открываем главную страницу", () -> {
             registrationPage.openPage();
