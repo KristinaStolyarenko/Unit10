@@ -27,7 +27,8 @@ dependencies {
             "com.codeborne:selenide:$selenideVersion",
             "io.qameta.allure:allure-selenide:$allureVersion",
             "com.github.javafaker:javafaker:1.0.2",
-            "org.junit.jupiter:junit-jupiter-api:$junitVersion")
+            "org.junit.jupiter:junit-jupiter-api:$junitVersion",
+            "org.aeonbits.owner:owner:1.0.12")
     testRuntimeOnly(
             "org.slf4j:slf4j-simple:1.7.29",
             "org.junit.jupiter:junit-jupiter-engine:$junitVersion")
@@ -42,9 +43,12 @@ tasks.withType(Test) {
 
     testLogging {
         lifecycle {
-//            events "started", "failed"
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
     }
+}
+
+task properties_test(type: Test) {
+    systemProperty("testCloudUrl", System.getProperty("testCloudUrl", "https://%s:%s@selenoid.autotests.cloud/wd/hub/"))
 }

@@ -1,8 +1,6 @@
 package com.krissirin;
 
-import com.codeborne.selenide.logevents.SelenideLogger;
 import com.krissirin.pages.RegistrationPage;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 
 import static io.qameta.allure.Allure.step;
